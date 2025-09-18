@@ -2,14 +2,16 @@
 <html>
   <head> 
     <title>My Music Page</title> 
+    <!-- Link to the stylesheet called style.css -->
+    <link rel="stylesheet" href="css/style.css" />
   </head> 
   <body> 
     <header>
-        <h1>My Music Page</h1>
+        <h1 id="main_page_header">My Music Page</h1>
         <p>This is a page all about the music and artists that I like!</p>
     </header>
-    <main>
-        <article>
+    <main id = "page1_content">
+        <article id = "mclean">
             <h3>Don McLean</h3>
             <p>Don McLean is a singer and songwriter from New Rochelle, New York. He is best known for his hit music like "American Pie."</p>
             <img 
@@ -17,25 +19,27 @@
                 alt = "A monochrome image of singer/songwriter Don McLean." 
                 width = "50%"
             >
-            <section>
-                <p>Favorite Songs</p>
+            <div id="song_album_wrapper">
+            <section id = "songs">
+                <p class = "subheader">Favorite Songs</p>
                 <ul> 
                     <li>American Pie</li>
                     <li>Vincent</li>
                     <li>Castles in the Air</li> 
                 </ul>
             </section>
-                <section>
-                <p>Best Albums</p>
+            <section id = "albums">
+                <p class = "subheader">Best Albums</p>
                 <ol>
                     <li>American Pie</li>
                     <li>Tapestry</li>
                     <li>Believers</li>
                 </ol>
             </section>
-            <p>Learn more about<a href = "https://donmclean.com/"> Don McLean</a> here!</p>
+            </div>
+            <p class = "button">Learn more about<a href = "https://donmclean.com/"> Don McLean</a> here!</p>
         </article>
-        <nav>
+        <nav id = "footer">
             <h4>See my other favorite artists!</h4>
             <ul>
                 <li><a href="clapton.html">Eric Clapton</a>
